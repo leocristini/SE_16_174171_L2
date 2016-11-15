@@ -1,0 +1,31 @@
+<html>
+    <head>
+    </head>
+    <body>
+        
+        <h1>Warehouse</h1>
+        
+        <table id="main_table" border=1px>
+            <tr id="it_list"></tr>
+            <tr id="qty_list"></tr>
+        </table>
+        
+        Maximum amount per item is <input id="maxAmount" type="number" value="30" readOnly="true">
+        <button type="button" onClick="changeMaxAm()" id="btnvalue">Change value</button>
+        
+        <br>
+        <button type="button" onClick="showForm()">Add item</button>
+        
+        <form style="display:none;" id="add_form" name="add_form">
+            <label for="it_name">Item's name</label>
+            <input type="text" id="it_name">
+            <label for="it_qty">Item's quantity</label>
+            <input type="number" id="it_qty">
+            <button type="button" onClick="setOrder()">Order</button>
+        </form>
+        
+        <script src="javascript.js"></script>
+
+        
+    </body>
+</html>
